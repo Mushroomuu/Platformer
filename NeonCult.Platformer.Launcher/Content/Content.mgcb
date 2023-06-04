@@ -1,0 +1,62 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:Windows
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:..\..\NeonCult.Platformer.Pipeline\bin\Debug\net6.0-windows\NeonCult.Platformer.Pipeline.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Textures/TileSetTextures/BMBT-WorldOneTiles.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/TileSetTextures/BMBT-WorldOneTiles.png
+
+#begin Textures/TileSetTextures/BMBT-WorldOneTiles.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/TileSetTextures/BMBT-WorldOneTiles.png
+
+#begin Textures/WhitePixel.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Textures/WhitePixel.png
+
+#begin TileMaps/TestWorld.tmx
+/importer:TileMapImporter
+/processor:TileMapProcessor
+/build:TileMaps/TestWorld.tmx
+
+#begin TileSets/BMBT-WorldOneTiles.tsx
+/importer:TileSetImporter
+/processor:TileSetProcessor
+/build:TileSets/BMBT-WorldOneTiles.tsx
+

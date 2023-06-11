@@ -16,6 +16,7 @@ namespace NeonCult.Platformer.Entities.TileMaps
         public int UpdateOrder => 0;
 
         public TileMapTileLayer Layer { get; }
+        public List<string> Ids { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public TileMapLayerRenderer(TileMapTileLayer layer)
         {

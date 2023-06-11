@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NeonCult.Platformer.Entities
 {
-    public class EntityManager : IUpdatable
+    public class EntityManager
     {
 
         private readonly List<IGameEntity> _entities = new List<IGameEntity>();

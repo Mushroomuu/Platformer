@@ -11,6 +11,7 @@ namespace NeonCult.Platformer.Entities
     internal interface ITileMapPlaceable : IGameEntity
     {
 
+        string Type { get; }
         void Initialize(ContentManager content, PropertyMap properties);
 
     }

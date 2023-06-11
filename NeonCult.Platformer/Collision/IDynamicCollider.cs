@@ -1,16 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
+
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NeonCult.Platformer.Core
+namespace NeonCult.Platformer.Collision
 {
-    public interface IUpdatable
+    public interface IDynamicCollider : ICollisionRectangle
     {
 
-        void Update(GameTime gameTime);
+        Rectangle PreviousCollider { get; }
+
 
     }
 }

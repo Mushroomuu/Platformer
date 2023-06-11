@@ -1,6 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using NeonCult.Platformer.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace NeonCult.Platformer.Entities
 {
-    public interface IGameEntity : IEntity
+    public interface IEntity
     {
 
-        int DrawOrder { get; }
+        List<string> Ids { get; set; }
 
-        void Draw(GameTime gameTime, SpriteBatch spriteBatch);
+        int UpdateOrder { get; }
+
+        void Update(GameTime gameTime);
 
     }
 }

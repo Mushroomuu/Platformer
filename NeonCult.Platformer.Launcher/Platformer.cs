@@ -18,6 +18,7 @@ public class Platformer : Game
     private Texture2D _whitePixel;
 
     private Polygon _testPolygon;
+    private Rectangle _testRectangle;
 
     public Platformer()
     {
@@ -53,7 +54,8 @@ public class Platformer : Game
 
         _testPolygon = new Polygon(points, false);
         _testPolygon.Translate(Vector2.One * 100);
-        
+
+        _testRectangle = new Rectangle(200, 200, 100, 100);
 
     }
 
@@ -75,6 +77,8 @@ public class Platformer : Game
         _spriteBatch.Draw(_testTileSet.Texture, Vector2.One, Color.White);
 
         _testPolygon.Draw(_spriteBatch, _whitePixel);
+
+        _spriteBatch.Draw(_whitePixel, _testRectangle, Color.Green);
 
         _spriteBatch.End();
 

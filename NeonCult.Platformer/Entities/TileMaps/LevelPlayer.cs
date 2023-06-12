@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using NeonCult.Platformer.Collision;
 using NeonCult.Platformer.Core;
+using NeonCult.Platformer.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,9 @@ using System.Threading.Tasks;
 
 namespace NeonCult.Platformer.Entities.TileMaps
 {
-    public class LevelPlayer : IDynamicCollider, ITileMapPlaceable
+    public class LevelPlayer : IDynamicCollider, ITileMapPlaceable, ICameraSnappable
     {
-        public Rectangle CollisionBox => throw new NotImplementedException();
+        public Rectangle CollisionBox { get; private set; }
 
         public string Type => "LevelPlayer";
 
@@ -26,7 +27,9 @@ namespace NeonCult.Platformer.Entities.TileMaps
 
         public int UpdateOrder => 0;
 
-        public Rectangle PreviousCollider => throw new NotImplementedException();
+        public Rectangle PreviousCollider { get; private set; }
+
+        public Vector2 CameraPosition { get; private set; }
 
         public void Initialize(ContentManager content, PropertyMap properties)
         {
